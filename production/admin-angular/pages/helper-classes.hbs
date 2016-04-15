@@ -1,0 +1,757 @@
+
+
+<!-- Lazyload -->
+
+<script type="text/javascript" src="../../assets/widgets/lazyload/lazyload.js"></script>
+<script type="text/javascript">
+    /* Lazyload */
+
+    $(function() {
+        $("img.lazy").lazyload({
+            effect: "fadeIn",
+            threshold: 100
+        });
+    });
+</script>
+
+<div id="page-title">
+    <h2>Helper classes</h2>
+    <p>special CSS classes for the most common tweaks &amp;amp; modifications.</p>
+    <div id="theme-options" class="admin-options">
+    <a href="javascript:void(0);" class="btn btn-primary theme-switcher tooltip-button" data-placement="left" title="Color schemes and layout options">
+        <i class="glyph-icon icon-linecons-cog icon-spin"></i>
+    </a>
+    <div id="theme-switcher-wrapper">
+        <div class="scroll-switcher">
+            <h5 class="header">Layout options</h5>
+            <ul class="reset-ul">
+                <li>
+                    <label for="boxed-layout">Boxed layout</label>
+                    <input type="checkbox" data-toggletarget="boxed-layout" id="boxed-layout" class="input-switch-alt">
+                </li>
+                <li>
+                    <label for="fixed-header">Fixed header</label>
+                    <input type="checkbox" data-toggletarget="fixed-header" id="fixed-header" class="input-switch-alt">
+                </li>
+                <li>
+                    <label for="fixed-sidebar">Fixed sidebar</label>
+                    <input type="checkbox" data-toggletarget="fixed-sidebar" id="fixed-sidebar" class="input-switch-alt">
+                </li>
+                <li>
+                    <label for="closed-sidebar">Closed sidebar</label>
+                    <input type="checkbox" data-toggletarget="closed-sidebar" id="closed-sidebar" class="input-switch-alt">
+                </li>
+            </ul>
+            <div class="boxed-bg-wrapper hide">
+                <h5 class="header">
+                    Boxed Page Background
+                    <a class="set-background-style" data-header-bg="" title="Remove all styles" href="javascript:void(0);">Clear</a>
+                </h5>
+                <div class="theme-color-wrapper clearfix">
+                    <h5>Patterns</h5>
+                    <a class="tooltip-button set-background-style pattern-bg-3" data-header-bg="pattern-bg-3" title="Pattern 3" href="javascript:void(0);">Pattern 3</a>
+                    <a class="tooltip-button set-background-style pattern-bg-4" data-header-bg="pattern-bg-4" title="Pattern 4" href="javascript:void(0);">Pattern 4</a>
+                    <a class="tooltip-button set-background-style pattern-bg-5" data-header-bg="pattern-bg-5" title="Pattern 5" href="javascript:void(0);">Pattern 5</a>
+                    <a class="tooltip-button set-background-style pattern-bg-6" data-header-bg="pattern-bg-6" title="Pattern 6" href="javascript:void(0);">Pattern 6</a>
+                    <a class="tooltip-button set-background-style pattern-bg-7" data-header-bg="pattern-bg-7" title="Pattern 7" href="javascript:void(0);">Pattern 7</a>
+                    <a class="tooltip-button set-background-style pattern-bg-8" data-header-bg="pattern-bg-8" title="Pattern 8" href="javascript:void(0);">Pattern 8</a>
+                    <a class="tooltip-button set-background-style pattern-bg-9" data-header-bg="pattern-bg-9" title="Pattern 9" href="javascript:void(0);">Pattern 9</a>
+                    <a class="tooltip-button set-background-style pattern-bg-10" data-header-bg="pattern-bg-10" title="Pattern 10" href="javascript:void(0);">Pattern 10</a>
+
+                    <div class="clear"></div>
+
+                    <h5 class="mrg15T">Solids &amp;Images</h5>
+                    <a class="tooltip-button set-background-style bg-black" data-header-bg="bg-black" title="Black" href="javascript:void(0);">Black</a>
+                    <a class="tooltip-button set-background-style bg-gray mrg10R" data-header-bg="bg-gray" title="Gray" href="javascript:void(0);">Gray</a>
+
+                    <a class="tooltip-button set-background-style full-bg-1" data-header-bg="full-bg-1 fixed-bg" title="Image 1" href="javascript:void(0);">Image 1</a>
+                    <a class="tooltip-button set-background-style full-bg-2" data-header-bg="full-bg-2 fixed-bg" title="Image 2" href="javascript:void(0);">Image 2</a>
+                    <a class="tooltip-button set-background-style full-bg-3" data-header-bg="full-bg-3 fixed-bg" title="Image 3" href="javascript:void(0);">Image 3</a>
+                    <a class="tooltip-button set-background-style full-bg-4" data-header-bg="full-bg-4 fixed-bg" title="Image 4" href="javascript:void(0);">Image 4</a>
+                    <a class="tooltip-button set-background-style full-bg-5" data-header-bg="full-bg-5 fixed-bg" title="Image 5" href="javascript:void(0);">Image 5</a>
+                    <a class="tooltip-button set-background-style full-bg-6" data-header-bg="full-bg-6 fixed-bg" title="Image 6" href="javascript:void(0);">Image 6</a>
+
+                </div>
+            </div>
+            <h5 class="header">
+                Header Style
+                <a class="set-adminheader-style" data-header-bg="bg-gradient-9" title="Remove all styles" href="javascript:void(0);">Clear</a>
+            </h5>
+            <div class="theme-color-wrapper clearfix">
+                <h5>Solids</h5>
+                <a class="tooltip-button set-adminheader-style bg-primary" data-header-bg="bg-primary font-inverse" title="Primary" href="javascript:void(0);">Primary</a>
+                <a class="tooltip-button set-adminheader-style bg-green" data-header-bg="bg-green font-inverse" title="Green" href="javascript:void(0);">Green</a>
+                <a class="tooltip-button set-adminheader-style bg-red" data-header-bg="bg-red font-inverse" title="Red" href="javascript:void(0);">Red</a>
+                <a class="tooltip-button set-adminheader-style bg-blue" data-header-bg="bg-blue font-inverse" title="Blue" href="javascript:void(0);">Blue</a>
+                <a class="tooltip-button set-adminheader-style bg-warning" data-header-bg="bg-warning font-inverse" title="Warning" href="javascript:void(0);">Warning</a>
+                <a class="tooltip-button set-adminheader-style bg-purple" data-header-bg="bg-purple font-inverse" title="Purple" href="javascript:void(0);">Purple</a>
+                <a class="tooltip-button set-adminheader-style bg-black" data-header-bg="bg-black font-inverse" title="Black" href="javascript:void(0);">Black</a>
+
+                <div class="clear"></div>
+
+                <h5 class="mrg15T">Gradients</h5>
+                <a class="tooltip-button set-adminheader-style bg-gradient-1" data-header-bg="bg-gradient-1 font-inverse" title="Gradient 1" href="javascript:void(0);">Gradient 1</a>
+                <a class="tooltip-button set-adminheader-style bg-gradient-2" data-header-bg="bg-gradient-2 font-inverse" title="Gradient 2" href="javascript:void(0);">Gradient 2</a>
+                <a class="tooltip-button set-adminheader-style bg-gradient-3" data-header-bg="bg-gradient-3 font-inverse" title="Gradient 3" href="javascript:void(0);">Gradient 3</a>
+                <a class="tooltip-button set-adminheader-style bg-gradient-4" data-header-bg="bg-gradient-4 font-inverse" title="Gradient 4" href="javascript:void(0);">Gradient 4</a>
+                <a class="tooltip-button set-adminheader-style bg-gradient-5" data-header-bg="bg-gradient-5 font-inverse" title="Gradient 5" href="javascript:void(0);">Gradient 5</a>
+                <a class="tooltip-button set-adminheader-style bg-gradient-6" data-header-bg="bg-gradient-6 font-inverse" title="Gradient 6" href="javascript:void(0);">Gradient 6</a>
+                <a class="tooltip-button set-adminheader-style bg-gradient-7" data-header-bg="bg-gradient-7 font-inverse" title="Gradient 7" href="javascript:void(0);">Gradient 7</a>
+                <a class="tooltip-button set-adminheader-style bg-gradient-8" data-header-bg="bg-gradient-8 font-inverse" title="Gradient 8" href="javascript:void(0);">Gradient 8</a>
+            </div>
+            <h5 class="header">
+                Sidebar Style
+                <a class="set-sidebar-style" data-header-bg="" title="Remove all styles" href="javascript:void(0);">Clear</a>
+            </h5>
+            <div class="theme-color-wrapper clearfix">
+                <h5>Solids</h5>
+                <a class="tooltip-button set-sidebar-style bg-primary" data-header-bg="bg-primary font-inverse" title="Primary" href="javascript:void(0);">Primary</a>
+                <a class="tooltip-button set-sidebar-style bg-green" data-header-bg="bg-green font-inverse" title="Green" href="javascript:void(0);">Green</a>
+                <a class="tooltip-button set-sidebar-style bg-red" data-header-bg="bg-red font-inverse" title="Red" href="javascript:void(0);">Red</a>
+                <a class="tooltip-button set-sidebar-style bg-blue" data-header-bg="bg-blue font-inverse" title="Blue" href="javascript:void(0);">Blue</a>
+                <a class="tooltip-button set-sidebar-style bg-warning" data-header-bg="bg-warning font-inverse" title="Warning" href="javascript:void(0);">Warning</a>
+                <a class="tooltip-button set-sidebar-style bg-purple" data-header-bg="bg-purple font-inverse" title="Purple" href="javascript:void(0);">Purple</a>
+                <a class="tooltip-button set-sidebar-style bg-black" data-header-bg="bg-black font-inverse" title="Black" href="javascript:void(0);">Black</a>
+
+                <div class="clear"></div>
+
+                <h5 class="mrg15T">Gradients</h5>
+                <a class="tooltip-button set-sidebar-style bg-gradient-1" data-header-bg="bg-gradient-1 font-inverse" title="Gradient 1" href="javascript:void(0);">Gradient 1</a>
+                <a class="tooltip-button set-sidebar-style bg-gradient-2" data-header-bg="bg-gradient-2 font-inverse" title="Gradient 2" href="javascript:void(0);">Gradient 2</a>
+                <a class="tooltip-button set-sidebar-style bg-gradient-3" data-header-bg="bg-gradient-3 font-inverse" title="Gradient 3" href="javascript:void(0);">Gradient 3</a>
+                <a class="tooltip-button set-sidebar-style bg-gradient-4" data-header-bg="bg-gradient-4 font-inverse" title="Gradient 4" href="javascript:void(0);">Gradient 4</a>
+                <a class="tooltip-button set-sidebar-style bg-gradient-5" data-header-bg="bg-gradient-5 font-inverse" title="Gradient 5" href="javascript:void(0);">Gradient 5</a>
+                <a class="tooltip-button set-sidebar-style bg-gradient-6" data-header-bg="bg-gradient-6 font-inverse" title="Gradient 6" href="javascript:void(0);">Gradient 6</a>
+                <a class="tooltip-button set-sidebar-style bg-gradient-7" data-header-bg="bg-gradient-7 font-inverse" title="Gradient 7" href="javascript:void(0);">Gradient 7</a>
+                <a class="tooltip-button set-sidebar-style bg-gradient-8" data-header-bg="bg-gradient-8 font-inverse" title="Gradient 8" href="javascript:void(0);">Gradient 8</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Background colors
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="example-code clearfix">
+
+                        <div class="btn bg-white float-left mrg5A">
+                            .bg-white
+                        </div>
+                        <div class="btn bg-azure float-left mrg5A">
+                            .bg-azure
+                        </div>
+                        <div class="btn bg-blue-alt float-left mrg5A">
+                            .bg-blue-alt
+                        </div>
+                        <div class="btn bg-purple float-left mrg5A">
+                            .bg-purple
+                        </div>
+                        <div class="btn bg-yellow float-left mrg5A">
+                            .bg-yellow
+                        </div>
+                        <div class="btn bg-gray float-left mrg5A">
+                            .bg-gray
+                        </div>
+                        <div class="btn bg-gray-alt float-left mrg5A">
+                            .bg-gray-alt
+                        </div>
+                        <div class="btn bg-black float-left mrg5A">
+                            .bg-black
+                        </div>
+                        <div class="btn bg-blue float-left mrg5A">
+                            .bg-blue
+                        </div>
+                        <div class="btn bg-green float-left mrg5A">
+                            .bg-green
+                        </div>
+                        <div class="btn bg-red float-left mrg5A">
+                            .bg-red
+                        </div>
+                        <div class="btn bg-orange float-left mrg5A">
+                            .bg-orange
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Font colors
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="example-code clearfix">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="pad5A font-gray">.font-gray</div>
+                                <div class="pad5A font-gray-dark">.font-gray-dark</div>
+                                <div class="pad5A font-black">.font-black</div>
+                                <div class="pad5A font-blue">.font-blue</div>
+                                <div class="pad5A font-blue-alt">.font-blue-alt</div>
+                                <div class="pad5A font-azure">.font-azure</div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pad5A font-purple">.font-purple</div>
+                                <div class="pad5A font-yellow">.font-yellow</div>
+                                <div class="pad5A font-green">.font-green</div>
+                                <div class="pad5A font-red">.font-red</div>
+                                <div class="pad5A font-orange">.font-orange</div>
+                                <div class="bg-black pad5A font-white">.font-white</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Margins
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="example-code clearfix">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                    </tr>
+                                    </thead>
+                                    <tr>
+                                        <td><b>.mrg5A</b></td>
+                                        <td>Adds 5px all margins</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg5T</b></td>
+                                        <td>Adds 5px top margin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg5R</b></td>
+                                        <td>Adds 5px right margin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg5B</b></td>
+                                        <td>Adds 5px bottom margin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg5L</b></td>
+                                        <td>Adds 5px left margin</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><b>.mrg10A</b></td>
+                                        <td>Adds 10px all margins</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg10T</b></td>
+                                        <td>Adds 10px top margin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg10R</b></td>
+                                        <td>Adds 10px right margin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg10B</b></td>
+                                        <td>Adds 10px bottom margin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg10L</b></td>
+                                        <td>Adds 10px left margin</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><b>.mrg15A</b></td>
+                                        <td>Adds 15px all margins</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg15T</b></td>
+                                        <td>Adds 15px top margin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg15R</b></td>
+                                        <td>Adds 15px right margin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg15B</b></td>
+                                        <td>Adds 15px bottom margin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg15L</b></td>
+                                        <td>Adds 15px left margin</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><b>.mrg20A</b></td>
+                                        <td>Adds 20px all margins</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-md-6">
+                                <table class="table table-bordered mrg25B">
+                                    <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                    </tr>
+                                    </thead>
+                                    <tr>
+                                        <td><b>.mrg20T</b></td>
+                                        <td>Adds 20px top margin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg20R</b></td>
+                                        <td>Adds 20px right margin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg20B</b></td>
+                                        <td>Adds 20px bottom margin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg20L</b></td>
+                                        <td>Adds 20px left margin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg25A</b></td>
+                                        <td>Adds 25px all margins</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg25T</b></td>
+                                        <td>Adds 25px top margin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg25R</b></td>
+                                        <td>Adds 25px right margin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg25B</b></td>
+                                        <td>Adds 25px bottom margin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg25L</b></td>
+                                        <td>Adds 25px left margin</td>
+                                    </tr>
+                                </table>
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                    </tr>
+                                    </thead>
+                                    <tr>
+                                        <td><b>.mrg0A</b></td>
+                                        <td>Removes all margins</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg0T</b></td>
+                                        <td>Removes top margin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg0R</b></td>
+                                        <td>Removes right margin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg0B</b></td>
+                                        <td>Removes bottom margin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.mrg0L</b></td>
+                                        <td>Removes left margin</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Paddings
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="example-code clearfix">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                    </tr>
+                                    </thead>
+                                    <tr>
+                                        <td><b>.pad5A</b></td>
+                                        <td>Adds 5px all mpadding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad5T</b></td>
+                                        <td>Adds 5px top padding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad5R</b></td>
+                                        <td>Adds 5px right padding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad5B</b></td>
+                                        <td>Adds 5px bottom padding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad5L</b></td>
+                                        <td>Adds 5px left padding</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><b>.pad10A</b></td>
+                                        <td>Adds 10px all mpadding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad10T</b></td>
+                                        <td>Adds 10px top padding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad10R</b></td>
+                                        <td>Adds 10px right padding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad10B</b></td>
+                                        <td>Adds 10px bottom padding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad10L</b></td>
+                                        <td>Adds 10px left padding</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><b>.pad15A</b></td>
+                                        <td>Adds 15px all mpadding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad15T</b></td>
+                                        <td>Adds 15px top padding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad15R</b></td>
+                                        <td>Adds 15px right padding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad15B</b></td>
+                                        <td>Adds 15px bottom padding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad15L</b></td>
+                                        <td>Adds 15px left padding</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><b>.pad20A</b></td>
+                                        <td>Adds 20px all mpadding</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-md-6">
+                                <table class="table table-bordered mrg25B">
+                                    <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                    </tr>
+                                    </thead>
+                                    <tr>
+                                        <td><b>.pad20T</b></td>
+                                        <td>Adds 20px top padding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad20R</b></td>
+                                        <td>Adds 20px right padding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad20B</b></td>
+                                        <td>Adds 20px bottom padding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad20L</b></td>
+                                        <td>Adds 20px left padding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad25A</b></td>
+                                        <td>Adds 25px all mpadding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad25T</b></td>
+                                        <td>Adds 25px top padding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad25R</b></td>
+                                        <td>Adds 25px right padding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad25B</b></td>
+                                        <td>Adds 25px bottom padding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad25L</b></td>
+                                        <td>Adds 25px left padding</td>
+                                    </tr>
+                                </table>
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                    </tr>
+                                    </thead>
+                                    <tr>
+                                        <td><b>.pad0A</b></td>
+                                        <td>Removes all mpadding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad0T</b></td>
+                                        <td>Removes top padding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad0R</b></td>
+                                        <td>Removes right padding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad0B</b></td>
+                                        <td>Removes bottom padding</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>.pad0L</b></td>
+                                        <td>Removes left padding</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Font sizes
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="example-code clearfix">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="font-size-10">.font-size-10</div>
+                                <div class="font-size-11">.font-size-11</div>
+                                <div class="font-size-12">.font-size-12</div>
+                                <div class="font-size-13">.font-size-13</div>
+                                <div class="font-size-14">.font-size-14</div>
+                                <div class="font-size-15">.font-size-15</div>
+                                <div class="font-size-16 pad5B">.font-size-16</div>
+                                <div class="font-size-17 pad5B">.font-size-17</div>
+                                <div class="font-size-18 pad5B">.font-size-18</div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="font-size-20 pad5B">.font-size-20</div>
+                                <div class="font-size-23 pad10B">.font-size-23</div>
+                                <div class="font-size-28 pad10B">.font-size-28</div>
+                                <div class="font-size-35 pad10B">.font-size-35</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Resets
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="example-code clearfix">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                            </thead>
+                            <tr>
+                                <td><b>.float-none</b></td>
+                                <td>Removes floats</td>
+                            </tr>
+                            <tr>
+                                <td><b>.float-left</b></td>
+                                <td>Floats element to the left</td>
+                            </tr>
+                            <tr>
+                                <td><b>.float-right</b></td>
+                                <td>Floats element to the right</td>
+                            </tr>
+                            <tr>
+                                <td><b>.opacity-100</b></td>
+                                <td>Sets the element opacity to 100%</td>
+                            </tr>
+                            <tr>
+                                <td><b>.opacity-80</b></td>
+                                <td>Sets the element opacity to 80%</td>
+                            </tr>
+                            <tr>
+                                <td><b>.opacity-60</b></td>
+                                <td>Sets the element opacity to 60%</td>
+                            </tr>
+                            <tr>
+                                <td><b>.opacity-30</b></td>
+                                <td>Sets the element opacity to 30%</td>
+                            </tr>
+                            <tr>
+                                <td><b>.clearfix</b></td>
+                                <td>Clears floats for contained elements</td>
+                            </tr>
+                            <tr>
+                                <td><b>.clear</b></td>
+                                <td>Clears floats from elements above</td>
+                            </tr>
+                            <tr>
+                                <td><b>.clear-none</b></td>
+                                <td>Removes clear floats</td>
+                            </tr>
+                            <tr>
+                                <td><b>.hide</b></td>
+                                <td>Hides element with display: none</td>
+                            </tr>
+                            <tr>
+                                <td><b>.display-block</b></td>
+                                <td>Transforms non-block to block elements</td>
+                            </tr>
+                            <tr>
+                                <td><b>.display-inline</b></td>
+                                <td>Adds display: inline-block to elements</td>
+                            </tr>
+                            <tr>
+                                <td><b>.center-margin</b></td>
+                                <td>Centers block elements</td>
+                            </tr>
+                            <tr>
+                                <td class="tooltip-button" title="This is very useful when you want to center align inline elements."><b>.center-div</b></td>
+                                <td>Like .center-margin, but adds float:none &amp; text-align: center</td>
+                            </tr>
+                            <tr>
+                                <td><b>.no-border</b></td>
+                                <td>Changes the border color to transparent</td>
+                            </tr>
+                            <tr>
+                                <td><b>.border-top</b></td>
+                                <td>Adds a 1px top border that inherits the color from any other class with border color defined.</td>
+                            </tr>
+                            <tr>
+                                <td><b>.remove-border</b></td>
+                                <td>Removes the border alltogether from an element</td>
+                            </tr>
+                            <tr>
+                                <td><b>.divider</b></td>
+                                <td>Adds a 1px gray line between elements and clears floats.</td>
+                            </tr>
+
+                            <tr>
+                                <td><b>.width-reset</b></td>
+                                <td>Resets width to inherited values</td>
+                            </tr>
+                            <tr>
+                                <td><b>.no-shadow</b></td>
+                                <td>Removes box shadows</td>
+                            </tr>
+                            <tr>
+                                <td><b>.transparent</b></td>
+                                <td>Makes background, border and shadow colors transparent</td>
+                            </tr>
+                            <tr>
+                                <td><b>.disabled</b></td>
+                                <td>Makes the element look disabled.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Text
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="example-code clearfix">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                            </thead>
+                            <tr>
+                                <td><b>.text-center</b></td>
+                                <td>Aligns text to center</td>
+                            </tr>
+                            <tr>
+                                <td><b>.text-left</b></td>
+                                <td>Aligns text to left</td>
+                            </tr>
+                            <tr>
+                                <td><b>.text-right</b></td>
+                                <td>Aligns text to right</td>
+                            </tr>
+                            <tr>
+                                <td><b>.text-justify</b></td>
+                                <td>Aligns text to justify</td>
+                            </tr>
+                            <tr>
+                                <td><b>.font-bold</b></td>
+                                <td>Makes text bold</td>
+                            </tr>
+                            <tr>
+                                <td><b>.font-normal</b></td>
+                                <td>Removes text bold</td>
+                            </tr>
+                            <tr>
+                                <td><b>.text-transform-none</b></td>
+                                <td>Reverts text transform to inherited</td>
+                            </tr>
+                            <tr>
+                                <td><b>.text-transform-upr</b></td>
+                                <td>Uppercase text</td>
+                            </tr>
+                            <tr>
+                                <td><b>.text-transform-low</b></td>
+                                <td>Lowercase text</td>
+                            </tr>
+                            <tr>
+                                <td><b>.text-transform-cap</b></td>
+                                <td>Capitalizes text</td>
+                            </tr>
+                            <tr>
+                                <td><b>.font-italic</b></td>
+                                <td>Makes text italic</td>
+                            </tr>
+                            <tr>
+                                <td><b>.font-none</b></td>
+                                <td>Removes text style</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
